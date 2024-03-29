@@ -27,5 +27,13 @@ public class Main {
         System.out.println("Тип short = "+n);
         System.out.println("Тип short = "+t);
         System.out.println("Тип  byte = "+y);
+
+        byte studentsOfLyudmilaPavlovna = 23;
+        byte studentsOfAnnaSergeevna = 27;
+        byte studentsOfEkaterinaAndreevna = 30;
+        short totalSheets = 480;
+        int totalNumberOfStudents = studentsOfLyudmilaPavlovna + studentsOfAnnaSergeevna + studentsOfEkaterinaAndreevna;
+        int sheetsForEachStudent = totalSheets / totalNumberOfStudents;
+        System.out.println("На каждого ученика рассчитано "+sheetsForEachStudent+" листов бумаги" );
     }
 }
