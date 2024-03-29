@@ -35,5 +35,20 @@ public class Main {
         int totalNumberOfStudents = studentsOfLyudmilaPavlovna + studentsOfAnnaSergeevna + studentsOfEkaterinaAndreevna;
         int sheetsForEachStudent = totalSheets / totalNumberOfStudents;
         System.out.println("На каждого ученика рассчитано "+sheetsForEachStudent+" листов бумаги" );
+
+        byte bottlesInTwoMinutes = 16;
+        int bottlesInOneMinutes = bottlesInTwoMinutes/2;
+        int bottlesInTwtntyMinutes = bottlesInOneMinutes * 20;
+        System.out.println("За 20 минут машина произвела "+bottlesInTwtntyMinutes+" штук бутылок");
+        short minutesInDay = 1440;
+        int bottlesInOneDay = bottlesInOneMinutes * minutesInDay;
+        System.out.println("За сутки машина произвела "+bottlesInOneDay+" штук бутылок");
+        int threeDaysInMinutes = minutesInDay * 3;
+        int bottlesInthreeDays = bottlesInOneMinutes * threeDaysInMinutes;
+        System.out.println("За трое суток машина произвела "+bottlesInthreeDays+" штук бутылок");
+        byte monthInDays = 31;
+        int monthInMinutes = minutesInDay * monthInDays;
+        int bottlesPerMonth = bottlesInOneMinutes * monthInMinutes;
+        System.out.println("За месяц машина произвела "+bottlesPerMonth+" штук бутылок");
     }
 }
