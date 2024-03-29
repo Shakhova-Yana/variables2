@@ -12,5 +12,20 @@ public class Main {
         System.out.println("Значение переменной квинтиллион с типом long равно " + quintillion);
         System.out.println("Значение переменной просто точка с типом float равно " + justPoint);
         System.out.println("Значение переменной большая точка с типом double равно " + bigPoint);
+
+        float a = 27.12F;
+        long p = 987678965549L;
+        float l = 2.786F;
+        short e = 569;
+        short n = -159;
+        short t = 27897;
+        byte y = 67;
+        System.out.println("Тип float = "+a);
+        System.out.println("Тип long = "+p);
+        System.out.println("Тип float = "+l);
+        System.out.println("Тип short = "+e);
+        System.out.println("Тип short = "+n);
+        System.out.println("Тип short = "+t);
+        System.out.println("Тип  byte = "+y);
     }
 }
