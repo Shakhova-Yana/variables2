@@ -59,7 +59,8 @@ public class Main {
         byte totalCansOfPaintForRenovation = 120;
         byte numberOfCansOfWhitePaintPerClass = 2;
         byte numberOfCansOfBrownPaintPerClass = 4;
-        int classesSchool = totalCansOfPaintForRenovation / (numberOfCansOfBrownPaintPerClass + numberOfCansOfWhitePaintPerClass);
+        int classesSchool = totalCansOfPaintForRenovation / (numberOfCansOfBrownPaintPerClass +
+                numberOfCansOfWhitePaintPerClass);
         int totalPurchasedWhiteCansOfPaint = numberOfCansOfWhitePaintPerClass * classesSchool;
         int totalPurchasedBrownCansOfPaint = numberOfCansOfBrownPaintPerClass * classesSchool;
         System.out.printf("В школе, где %s классов, нужно %s банок белой краски и %s банок коричневой краски\n"
@@ -87,8 +88,36 @@ public class Main {
         int resultOfWeightLossInDaysOf250Grams = sevenKgInGrams / dietMinus250GramsPerDay;
         int resultOfWeightLossInDaysOf500Grams = sevenKgInGrams / dietMinus500GramsPerDay;
         System.out.printf("%s дней уйдет на похудение,если спортсмен будет терять весс каждый день по 250 грамм," +
-                "\n%s дней уйдет на похудение,если спортсмен будет терять весс каждый день по 500 грамм."
+                "%s дней уйдет на похудение,если спортсмен будет терять весс каждый день по 500 грамм.\n"
                 ,resultOfWeightLossInDaysOf250Grams, resultOfWeightLossInDaysOf500Grams);
 
+        System.out.println("\ntask 8");
+        double percent = 1.1;
+        int salaryInRublesPerMonthForMasha = 67760;
+        int salaryInRublesPerMonthForDenis = 83690;
+        int salaryInRublesPerMonthForChristina = 76230;
+
+        double salaryInRublesPerYearForMasha = salaryInRublesPerMonthForMasha * 12;
+        double salaryInRublesPerYearForDenis = salaryInRublesPerMonthForDenis * 12;
+        double salaryInRublesPerYearForChristina = salaryInRublesPerMonthForChristina * 12;
+
+        double mashaSalaryIncreaseByTenPercent = salaryInRublesPerMonthForMasha * percent;
+        double denisSalaryIncreaseByTenPercent = salaryInRublesPerMonthForDenis * percent;
+        double christinaSalaryIncreaseByTenPercent = salaryInRublesPerMonthForChristina * percent;
+
+        double newSalaryInRublesPerYearForMasha = mashaSalaryIncreaseByTenPercent * 12;
+        double newSalaryInRublesPerYearForDenis = denisSalaryIncreaseByTenPercent * 12;
+        double newSalaryInRublesPerYearForChristina = christinaSalaryIncreaseByTenPercent * 12;
+
+        double difSalaryInRublesPerYearForMasha = newSalaryInRublesPerYearForMasha - salaryInRublesPerYearForMasha;
+        double difSalaryInRublesPerYearForDenis = newSalaryInRublesPerYearForDenis - salaryInRublesPerYearForDenis;
+        double difSalaryInRublesPerYearForChristina = newSalaryInRublesPerYearForChristina - salaryInRublesPerYearForChristina;
+
+        System.out.printf("Маша теперь получает %s рублей.Годовой доход вырос на %s рублей.\n",
+                mashaSalaryIncreaseByTenPercent, difSalaryInRublesPerYearForMasha);
+        System.out.printf("Денис теперь получает %.1f рублей.Годовой доход вырос на %.1f рублей.\n",
+                denisSalaryIncreaseByTenPercent, difSalaryInRublesPerYearForDenis);
+        System.out.printf("Кристина теперь получает %s рублей.Годовой доход вырос на %s рублей.\n",
+                christinaSalaryIncreaseByTenPercent, difSalaryInRublesPerYearForChristina);
     }
 }
