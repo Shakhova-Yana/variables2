@@ -36,7 +36,7 @@ public class Main {
         byte studentsOfEkaterinaAndreevna = 30;
         short totalSheets = 480;
         int totalNumberOfStudents = studentsOfLyudmilaPavlovna + studentsOfAnnaSergeevna + studentsOfEkaterinaAndreevna;
-        double sheetsForEachStudent = (double) totalSheets / totalNumberOfStudents;
+        int sheetsForEachStudent = totalSheets / totalNumberOfStudents;
         System.out.println("На каждого ученика рассчитано "+ sheetsForEachStudent +" листов бумаги" );
 
         System.out.println("\ntask 4");
@@ -78,6 +78,17 @@ public class Main {
                 + fourEggInGrams;
         int oneKilogramsInGrams = 1000;
         float breakfastInKilograms = (float) breakfastInGrams / oneKilogramsInGrams;
-        System.out.printf("Завтрак в граммах %s, завтрак в кг %s", breakfastInGrams, breakfastInKilograms);
+        System.out.printf("Завтрак в граммах %s, завтрак в кг %s\n", breakfastInGrams, breakfastInKilograms);
+
+        System.out.println("\ntask 7");
+        int sevenKgInGrams = oneKilogramsInGrams * 7;
+        int dietMinus250GramsPerDay = 250;
+        int dietMinus500GramsPerDay = 500;
+        int resultOfWeightLossInDaysOf250Grams = sevenKgInGrams / dietMinus250GramsPerDay;
+        int resultOfWeightLossInDaysOf500Grams = sevenKgInGrams / dietMinus500GramsPerDay;
+        System.out.printf("%s дней уйдет на похудение,если спортсмен будет терять весс каждый день по 250 грамм," +
+                "\n%s дней уйдет на похудение,если спортсмен будет терять весс каждый день по 500 грамм."
+                ,resultOfWeightLossInDaysOf250Grams, resultOfWeightLossInDaysOf500Grams);
+
     }
 }
