@@ -65,5 +65,19 @@ public class Main {
         System.out.printf("В школе, где %s классов, нужно %s банок белой краски и %s банок коричневой краски\n"
                 ,classesSchool, totalPurchasedWhiteCansOfPaint,totalPurchasedBrownCansOfPaint);
 
+        System.out.println("\ntask 6");
+        byte oneBananaInGrams = 80;
+        byte oneHundredMillilitersOfMilkInGrams = 105;
+        byte oneBracketOfIceCreamInGrams = 100;
+        int oneEggInGrams = 70;
+        int fiveBananaInGrams = oneBananaInGrams * 5;
+        int twoHundredMillilitersOfMilkInGrams = oneHundredMillilitersOfMilkInGrams * 2;
+        int twoBracketOfIceCreamInGrams = oneBracketOfIceCreamInGrams * 2;
+        int fourEggInGrams = oneEggInGrams * 4;
+        int breakfastInGrams = fiveBananaInGrams + twoHundredMillilitersOfMilkInGrams + twoBracketOfIceCreamInGrams
+                + fourEggInGrams;
+        int oneKilogramsInGrams = 1000;
+        float breakfastInKilograms = (float) breakfastInGrams / oneKilogramsInGrams;
+        System.out.printf("Завтрак в граммах %s, завтрак в кг %s", breakfastInGrams, breakfastInKilograms);
     }
 }
