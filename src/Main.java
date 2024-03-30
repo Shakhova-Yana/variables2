@@ -56,6 +56,14 @@ public class Main {
         System.out.println("За месяц машина произвела "+ bottlesPerMonth +" штук бутылок");
 
         System.out.println("\ntask 5");
+        byte totalCansOfPaintForRenovation = 120;
+        byte numberOfCansOfWhitePaintPerClass = 2;
+        byte numberOfCansOfBrownPaintPerClass = 4;
+        int classesSchool = totalCansOfPaintForRenovation / (numberOfCansOfBrownPaintPerClass + numberOfCansOfWhitePaintPerClass);
+        int totalPurchasedWhiteCansOfPaint = numberOfCansOfWhitePaintPerClass * classesSchool;
+        int totalPurchasedBrownCansOfPaint = numberOfCansOfBrownPaintPerClass * classesSchool;
+        System.out.printf("В школе, где %s классов, нужно %s банок белой краски и %s банок коричневой краски\n"
+                ,classesSchool, totalPurchasedWhiteCansOfPaint,totalPurchasedBrownCansOfPaint);
 
     }
 }
